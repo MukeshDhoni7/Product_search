@@ -46,7 +46,7 @@ const Products = () => {
       <div className='mx-auto max-w-xl mb-10'>
         <input type="text" placeholder='Search products.....' value={search} onChange={(e)=>setSearch(e.target.value)} className='w-full border border-slate-400 py-2 px-4 rounded-2xl shadow-sm outline-none transition focus:border-blue-500 focus:ring-1 focus:ring-blue-400' />
       </div>
-      <div className='mx-auto max-w-4xl  border border-slate-400  flex justify-between  gap-x-6 overflow-x-auto  items-center py-6 px-4 ring-1 ring-blue-600'>
+      <div className='mx-auto max-w-4xl  border border-slate-400  flex justify-between  gap-x-6 overflow-x-auto  items-center py-6 px-4 ring-1'>
         {categorizedProducts.map((ele)=>
         (
           <button className={`font-semibold cursor-pointer font-serif   px-4 rounded-sm  ${ele === selectCate?'bg-black text-white':'bg-blue-600 text-white'}`} key={ele} onClick={()=>setSelectcate(ele)}>{ele}</button>
